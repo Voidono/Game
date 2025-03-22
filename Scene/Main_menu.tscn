@@ -1,0 +1,90 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtkijrbmcgdhw"]
+
+[ext_resource type="Texture2D" uid="uid://xq8pv1tbf10f" path="res://Res/93626143_p0_master1200.jpg" id="1_xt047"]
+[ext_resource type="FontFile" uid="uid://lfv568rbrkxd" path="res://Res/punk kid.ttf" id="2_hytm2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xt047"]
+texture = ExtResource("1_xt047")
+modulate_color = Color(0.501407, 0.501406, 0.501406, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2mxj8"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xt047")
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.0
+offset_top = -108.0
+offset_right = 172.0
+offset_bottom = 158.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 9
+
+[node name="Button" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_2mxj8")
+text = "Start Game"
+
+[node name="Button2" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_2mxj8")
+text = "Option"
+
+[node name="Button3" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_2mxj8")
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -270.0
+offset_top = 104.0
+offset_right = 260.0
+offset_bottom = 223.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_fonts/font = ExtResource("2_hytm2")
+theme_override_font_sizes/font_size = 80
+text = "Giai cuu mien nam"
+horizontal_alignment = 1
