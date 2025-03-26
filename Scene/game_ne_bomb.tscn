@@ -7,7 +7,7 @@
 texture = ExtResource("1_jb71i")
 modulate_color = Color(0.374139, 0.374139, 0.374139, 1)
 
-[node name="Node2D" type="Node2D"]
+[node name="Main_scene" type="Node2D"]
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1149.0
