@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://4nqvotwvdkrv"]
+
+[ext_resource type="Texture2D" uid="uid://dh6ylbhv6cijg" path="res://Res/120383252_p0_master1200.jpg" id="1_jb71i"]
+[ext_resource type="PackedScene" uid="uid://cfxeyjlamrm52" path="res://Scene/Character.tscn" id="2_7g26p"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7g26p"]
+texture = ExtResource("1_jb71i")
+modulate_color = Color(0.374139, 0.374139, 0.374139, 1)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1149.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_7g26p")
+
+[node name="Character" parent="." instance=ExtResource("2_7g26p")]

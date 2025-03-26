@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfxeyjlamrm52"]
+
+[ext_resource type="Script" uid="uid://di45ld6c1g8hq" path="res://Scene/character.gd" id="1_q5f08"]
+[ext_resource type="Texture2D" uid="uid://dktlb2f0rlpro" path="res://Res/Character/An2.webp" id="1_qfbro"]
+[ext_resource type="Texture2D" uid="uid://duq34x2snqfoy" path="res://icon.svg" id="3_us202"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5f08"]
+size = Vector2(33, 88)
+
+[node name="Character" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(562, 287)
+motion_mode = 1
+script = ExtResource("1_q5f08")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_q5f08")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_qfbro")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+scale = Vector2(4.625, 5.07031)
+texture_normal = ExtResource("3_us202")
+action = "Left"
+metadata/_edit_lock_ = true
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(595, -1)
+scale = Vector2(4.375, 5.01563)
+texture_normal = ExtResource("3_us202")
+action = "Right"
+metadata/_edit_lock_ = true
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(427, 267)
+texture = ExtResource("3_us202")
