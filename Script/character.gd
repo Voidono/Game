@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const Speed = 300.0
+const Speed = 100.0
 var moveDir = Vector2(0,0)
 
 func _physics_process(delta):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwe78k0oqk6lv"]
+[gd_scene load_steps=3 format=3 uid="uid://bmu2sjdqskwuw"]
 
 [ext_resource type="Script" uid="uid://c8imji0tdr1c8" path="res://Script/projectile.gd" id="1_1eg7f"]
 [ext_resource type="Texture2D" uid="uid://b32s81inftgtl" path="res://Res/a-bomb-in-pixel-art-style-vector.jpg" id="1_jl7jq"]

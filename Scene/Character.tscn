@@ -35,7 +35,3 @@ scale = Vector2(4.375, 5.01563)
 texture_normal = ExtResource("3_us202")
 action = "Right"
 metadata/_edit_lock_ = true
-
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(427, 267)
-texture = ExtResource("3_us202")
