@@ -1,8 +1,8 @@
 extends Node2D
 
-@export var projectile_scene: PackedScene = preload("res://Scene/Projectile.tscn")
-@export var min_spawn_interval: float = 0.8
-@export var max_spawn_interval: float = 1.2
+@export var projectile_scene: PackedScene = preload("res://Res/Minigame-1/Projectile.tscn")
+@export var min_spawn_interval: float = 0.5
+@export var max_spawn_interval: float = 1.0
 @export var projectiles_per_burst: int = 20
 @export var move_speed: float = 100
 @export var wave_amplitude: float = 50
