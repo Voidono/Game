@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://2c35rnpdnqq5"]
 
 [ext_resource type="Texture2D" uid="uid://dh6ylbhv6cijg" path="res://Res/120383252_p0_master1200.jpg" id="1_jb71i"]
-[ext_resource type="PackedScene" uid="uid://cfxeyjlamrm52" path="res://Scene/Character.tscn" id="2_7g26p"]
-[ext_resource type="PackedScene" uid="uid://ryfhmc81g52d" path="res://Scene/projectile_spawner.tscn" id="3_pmv7m"]
+[ext_resource type="PackedScene" uid="uid://cfxeyjlamrm52" path="res://Res/Minigame-1/Character.tscn" id="2_7g26p"]
+[ext_resource type="PackedScene" uid="uid://ryfhmc81g52d" path="res://Res/Minigame-1/projectile_spawner.tscn" id="3_pmv7m"]
+
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7g26p"]
 texture = ExtResource("1_jb71i")
