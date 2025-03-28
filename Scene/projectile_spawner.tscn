@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ryfhmc81g52d"]
 
-[ext_resource type="Script" uid="uid://dvlgtcvld23r6" path="res://projectile_spawner.gd" id="1_h8c6h"]
+[ext_resource type="Script" uid="uid://dvlgtcvld23r6" path="res://Script/projectile_spawner.gd" id="1_h8c6h"]
 [ext_resource type="Texture2D" uid="uid://b2l71xbvqc7ik" path="res://Res/Flandre_down_1.png" id="2_jnsn1"]
 
 [node name="ProjectileSpawner" type="Node2D"]

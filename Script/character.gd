@@ -1,15 +1,29 @@
-extends CharacterBody2D
+extends Area2D
 
-const Speed = 100.0
-var moveDir = Vector2(0,0)
+@export var normal_speed: float = 300.0  # Normal movement speed
+@export var focus_speed: float = 150.0   # Slower speed for precision
+var speed: float = normal_speed
+var screen_size: Vector2
 
-func _physics_process(delta):
-	movement(delta)
-	
-func movement(d):
+func _ready():
+	screen_size = get_viewport_rect().size
+	add_to_group("player")  # For spawner tracking
+
+func _process(delta):
+	var velocity = Vector2.ZERO
+	# Directional input
 	if Input.is_action_pressed("Right"):
-		moveDir.x = 1
+		velocity.x += 1
 	if Input.is_action_pressed("Left"):
-		moveDir.x = -1
+		velocity.x -= 1
 	
-	move_and_collide(moveDir.normalized() * Speed * d)
+	# Focus mode (hold Shift to slow down)
+	speed = focus_speed if Input.is_action_pressed("Focus") else normal_speed
+	
+	# Normalize diagonal movement
+	if velocity.length() > 0:
+		velocity = velocity.normalized() * speed
+	
+	# Move and clamp to screen
+	position += velocity * delta
+	position = position.clamp(Vector2.ZERO, screen_size)

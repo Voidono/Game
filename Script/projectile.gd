@@ -1,6 +1,6 @@
 extends Node2D
 
-var speed = 100  # Base speed (pixels per second, adjustable for "slow")
+var speed = 200  # Base speed (pixels per second, adjustable for "slow")
 var direction = Vector2.DOWN  # Default direction (set by spawner)
 
 func _process(delta):

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bmu2sjdqskwuw"]
 
 [ext_resource type="Script" uid="uid://c8imji0tdr1c8" path="res://Script/projectile.gd" id="1_1eg7f"]
-[ext_resource type="Texture2D" uid="uid://b32s81inftgtl" path="res://Res/a-bomb-in-pixel-art-style-vector.jpg" id="1_jl7jq"]
+[ext_resource type="Texture2D" uid="uid://umx2jncoptu2" path="res://Res/images.png" id="2_1eg7f"]
 
 [node name="Projectile" type="Node2D"]
 script = ExtResource("1_1eg7f")
@@ -9,4 +9,4 @@ script = ExtResource("1_1eg7f")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-2, -1)
 scale = Vector2(0.0676021, 0.0676021)
-texture = ExtResource("1_jl7jq")
+texture = ExtResource("2_1eg7f")
