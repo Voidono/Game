@@ -19,10 +19,7 @@ func _process(delta):
 		velocity.x += 1
 	if Input.is_action_pressed("Left"):
 		velocity.x -= 1
-	if Input.is_action_pressed("Up"):
-		velocity.y -= 1
-	if Input.is_action_pressed("Down"):
-		velocity.y += 1
+
 	
 	# Focus mode (hold Shift for precision)
 	speed = focus_speed if Input.is_action_pressed("Focus") else normal_speed

@@ -16,8 +16,6 @@ offset_bottom = 650.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_7g26p")
 
 [node name="Character" parent="." instance=ExtResource("2_7g26p")]
-position = Vector2(-1, 180)
+position = Vector2(6, 5)
 
 [node name="ProjectileSpawner" parent="." instance=ExtResource("3_pmv7m")]
-
-[node name="ProjectileSpawner2" parent="." instance=ExtResource("3_pmv7m")]
