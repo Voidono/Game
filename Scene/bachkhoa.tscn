@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmnrhbgr3h76g"]
+
+[ext_resource type="Texture2D" uid="uid://c0kwxy8r4vt6v" path="res://map cho chapter 1/cong_bach_khoa1.png" id="1_gwwqb"]
+[ext_resource type="Texture2D" uid="uid://c760ng8r0p2x7" path="res://Scene/player and NPC/An1.png" id="2_gu7oh"]
+[ext_resource type="Script" uid="uid://cb2egxtovblmh" path="res://Scene/an.gd" id="3_2iahu"]
+[ext_resource type="Texture2D" uid="uid://bcgymtllgltag" path="res://map cho chapter 1/nghĩa trang/task.png" id="4_ukx23"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CongBachKhoa1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(873, 306.5)
+scale = Vector2(1.45, 1.36222)
+texture = ExtResource("1_gwwqb")
+
+[node name="An1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(949.5, 440.706)
+scale = Vector2(0.735294, 0.735294)
+texture = ExtResource("2_gu7oh")
+script = ExtResource("3_2iahu")
+
+[node name="ExclamationMark" type="Sprite2D" parent="An1"]
+texture_filter = 1
+position = Vector2(20.4, -46.1801)
+scale = Vector2(0.595004, 0.913751)
+texture = ExtResource("4_ukx23")
+
+[node name="DialogueBox" type="RichTextLabel" parent="An1"]
+visible = false
+offset_left = 25.16
+offset_top = -39.0402
+offset_right = 94.16
+offset_bottom = -17.0402
+theme_override_font_sizes/normal_font_size = 8
+text = "xin chào tôi là an"

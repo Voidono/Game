@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtkijrbmcgdhw"]
+[gd_scene load_steps=6 format=3 uid="uid://dtkijrbmcgdhw"]
 
 [ext_resource type="Texture2D" uid="uid://xq8pv1tbf10f" path="res://Res/93626143_p0_master1200.jpg" id="1_xt047"]
+[ext_resource type="Script" uid="uid://dkiqbr6x7x0rm" path="res://Scene/main_menu.gd" id="1_ycrsp"]
 [ext_resource type="FontFile" uid="uid://lfv568rbrkxd" path="res://Res/punk kid.ttf" id="2_hytm2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xt047"]
@@ -23,6 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ycrsp")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -88,3 +90,7 @@ theme_override_fonts/font = ExtResource("2_hytm2")
 theme_override_font_sizes/font_size = 80
 text = "Giai cuu mien nam"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="Container/Button" to="." method="_on_button_pressed"]
+[connection signal="tree_entered" from="Container/Button" to="." method="_on_button_tree_entered"]
+[connection signal="pressed" from="Container/Button3" to="." method="_on_button_3_pressed"]

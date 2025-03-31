@@ -18,6 +18,7 @@ position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_q5f08")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
 texture = ExtResource("1_qfbro")
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]

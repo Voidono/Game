@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnippqgj4d6co"]
+
+[ext_resource type="Script" uid="uid://jon0aqe5e3f1" path="res://character_body_2d.gd" id="1_051r2"]
+[ext_resource type="Texture2D" uid="uid://b4i12bap2k16a" path="res://map cho chapter 1/nghĩa trang/An1.png" id="2_ed3wl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qelg8"]
+size = Vector2(34, 94)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_051r2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qelg8")
+
+[node name="An1" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_ed3wl")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.25, 1.25)
