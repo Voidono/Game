@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpe1na2qpfnji"]
+
+[ext_resource type="Texture2D" uid="uid://du7lp15l7g57m" path="res://Res/Map/car.png" id="1_strog"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jvosb"]
+size = Vector2(380, 164)
+
+[node name="Car" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_strog")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(14, -1)
+shape = SubResource("RectangleShape2D_jvosb")
