@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://di45ld6c1g8hq" path="res://Res/Minigame-1/character.gd" id="1_q5f08"]
 [ext_resource type="Texture2D" uid="uid://dktlb2f0rlpro" path="res://Res/Character/An2.webp" id="1_qfbro"]
-[ext_resource type="Texture2D" uid="uid://duq34x2snqfoy" path="res://icon.svg" id="3_us202"]
+[ext_resource type="Texture2D" uid="uid://d17nn4dgaeh4m" path="res://icon.svg" id="3_us202"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5f08"]
 size = Vector2(33, 88)

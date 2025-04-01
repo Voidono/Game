@@ -14,6 +14,6 @@ func _input(event):
 			dialogue_box.visible = true  # Hiện hộp thoại
 
 func is_touched(touch_pos):
-	var char_rect = sprite.get_rect()
+	var char_rect = sprite.get_texture().get_size() * sprite.scale
 	var global_rect = Rect2(global_position, char_rect.size)
 	return global_rect.has_point(touch_pos)

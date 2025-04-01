@@ -9,7 +9,7 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	
 	# Lấy input từ người chơi
-	var direction = Input.get_axis("ui_left", "ui_right")
+	var direction = Input.get_axis("Left", "Right")
 	
 	# Di chuyển trái/phải
 	if direction:
