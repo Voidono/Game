@@ -1,11 +1,10 @@
-[gd_scene load_steps=18 format=4 uid="uid://cog4y6eegtykt"]
+[gd_scene load_steps=17 format=4 uid="uid://cog4y6eegtykt"]
 
 [ext_resource type="Texture2D" uid="uid://dikslmb0ftyld" path="res://map cho chapter 1/nghĩa trang/map_nghia_trang.png" id="1_g41yl"]
 [ext_resource type="Texture2D" uid="uid://5dqviva2k0h5" path="res://map cho chapter 1/nghĩa trang/tombstone1.png" id="2_20ktf"]
 [ext_resource type="Texture2D" uid="uid://dt1ygi0u1eg7n" path="res://map cho chapter 1/nghĩa trang/texture game.png" id="3_g41yl"]
 [ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://An.tscn" id="4_g41yl"]
-[ext_resource type="Script" uid="uid://br3ho6nmcfyo" path="res://Scene/tombstone_1.gd" id="5_sckbr"]
-[ext_resource type="Texture2D" uid="uid://bcgymtllgltag" path="res://map cho chapter 1/nghĩa trang/task.png" id="6_00igw"]
+[ext_resource type="PackedScene" uid="uid://d0wrk3rf85si2" path="res://Tombstone.tscn" id="5_20ktf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acxo1"]
 texture = ExtResource("1_g41yl")
@@ -1957,36 +1956,5 @@ z_index = 2
 position = Vector2(524, 432)
 up_direction = Vector2(0, 1)
 
-[node name="Tombstone1" type="Sprite2D" parent="."]
-position = Vector2(38, 447.75)
-scale = Vector2(0.913043, 1.00847)
-texture = ExtResource("2_20ktf")
-script = ExtResource("5_sckbr")
-
-[node name="ExclamationMark" type="Sprite2D" parent="Tombstone1"]
-texture_filter = 1
-position = Vector2(26.2857, -29.0042)
-scale = Vector2(0.684524, 0.71271)
-texture = ExtResource("6_00igw")
-
-[node name="DialogueBox" type="Control" parent="Tombstone1/ExclamationMark"]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_left = 6.0
-offset_top = -23.0
-offset_right = 115.0
-offset_bottom = -4.0
-tooltip_text = "	Tớ lại đến thăm các cậu đây, năm nay tết ấm no. Tớ thắp cho các cậu mấy nén hương."
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Tombstone1/ExclamationMark/DialogueBox"]
-texture_filter = 1
-layout_mode = 0
-offset_left = 3.6
-offset_top = -5.52174
-offset_right = 187.6
-offset_bottom = 15.4783
-theme_override_font_sizes/mono_font_size = 2
-theme_override_font_sizes/normal_font_size = 7
-text = "•	Tớ lại đến thăm các cậu đây, năm nay tết ấm no. Tớ thắp cho các cậu mấy nén hương."
-tab_size = 1
+[node name="TombStone2" parent="." instance=ExtResource("5_20ktf")]
+position = Vector2(-69, -70)
