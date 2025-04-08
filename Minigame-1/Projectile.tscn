@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bmu2sjdqskwuw"]
 
-[ext_resource type="Script" uid="uid://c8imji0tdr1c8" path="res://Res/Minigame-1/projectile.gd" id="1_187x4"]
+[ext_resource type="Script" uid="uid://c8imji0tdr1c8" path="res://Minigame-1/projectile.gd" id="1_187x4"]
 [ext_resource type="Texture2D" uid="uid://umx2jncoptu2" path="res://Res/images.png" id="2_6aqw4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_187x4"]

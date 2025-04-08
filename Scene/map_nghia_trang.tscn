@@ -1,7 +1,8 @@
 [gd_scene load_steps=5 format=4 uid="uid://dh3ek6p2e21eu"]
 
 [ext_resource type="Texture2D" uid="uid://dikslmb0ftyld" path="res://map cho chapter 1/nghĩa trang/map_nghia_trang.png" id="1_j7h33"]
-[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://An.tscn" id="2_qftnq"]
+[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://Scene/An.tscn" id="2_qftnq"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0i5v3"]
 texture = ExtResource("1_j7h33")

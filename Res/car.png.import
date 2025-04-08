@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhynavqwog4kn"
-path="res://.godot/imported/tombstone1.png-3a5d502845a5e6f6e84ad19117601887.ctex"
+uid="uid://du7lp15l7g57m"
+path="res://.godot/imported/car.png-d5e262958095685aff3635d6d32e902a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tombstone1.png"
-dest_files=["res://.godot/imported/tombstone1.png-3a5d502845a5e6f6e84ad19117601887.ctex"]
+source_file="res://Res/car.png"
+dest_files=["res://.godot/imported/car.png-d5e262958095685aff3635d6d32e902a.ctex"]
 
 [params]
 

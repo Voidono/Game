@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq0vo6asom5e4"
-path="res://.godot/imported/cong_bach_khoa1.png-f626d3aa91f581ab25dedd1523db362d.ctex"
+uid="uid://c760ng8r0p2x7"
+path="res://.godot/imported/An1.png-1b915394680c7be4228910a43e5bdd77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Res/Map/cong_bach_khoa1.png"
-dest_files=["res://.godot/imported/cong_bach_khoa1.png-f626d3aa91f581ab25dedd1523db362d.ctex"]
+source_file="res://Res/player and NPC/An1.png"
+dest_files=["res://.godot/imported/An1.png-1b915394680c7be4228910a43e5bdd77.ctex"]
 
 [params]
 

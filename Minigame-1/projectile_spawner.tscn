@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ryfhmc81g52d"]
 
-[ext_resource type="Script" uid="uid://dvlgtcvld23r6" path="res://Res/Minigame-1/projectile_spawner.gd" id="1_h8c6h"]
+[ext_resource type="Script" uid="uid://dvlgtcvld23r6" path="res://Minigame-1/projectile_spawner.gd" id="1_h8c6h"]
 [ext_resource type="Texture2D" uid="uid://ck7oclfmilruc" path="res://Res/b52.1.png" id="2_88qqm"]
 
 [node name="ProjectileSpawner" type="Node2D"]
@@ -9,6 +9,6 @@ script = ExtResource("1_h8c6h")
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-5.72205e-06, -3)
+position = Vector2(-4.54747e-13, -2.38419e-07)
 scale = Vector2(0.729167, 0.729167)
 texture = ExtResource("2_88qqm")

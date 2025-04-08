@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtkijrbmcgdhw"]
 
 [ext_resource type="Texture2D" uid="uid://xq8pv1tbf10f" path="res://Res/93626143_p0_master1200.jpg" id="1_xt047"]
-[ext_resource type="Script" uid="uid://dkiqbr6x7x0rm" path="res://Scene/main_menu.gd" id="1_ycrsp"]
+[ext_resource type="Script" uid="uid://dkiqbr6x7x0rm" path="res://Script/main_menu.gd" id="1_ycrsp"]
 [ext_resource type="FontFile" uid="uid://lfv568rbrkxd" path="res://Res/punk kid.ttf" id="2_hytm2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xt047"]

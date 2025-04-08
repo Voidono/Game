@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://dikslmb0ftyld" path="res://map cho chapter 1/nghĩa trang/map_nghia_trang.png" id="1_g41yl"]
 [ext_resource type="Texture2D" uid="uid://5dqviva2k0h5" path="res://map cho chapter 1/nghĩa trang/tombstone1.png" id="2_20ktf"]
 [ext_resource type="Texture2D" uid="uid://dt1ygi0u1eg7n" path="res://map cho chapter 1/nghĩa trang/texture game.png" id="3_g41yl"]
-[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://An.tscn" id="4_g41yl"]
-[ext_resource type="PackedScene" uid="uid://d0wrk3rf85si2" path="res://Tombstone.tscn" id="5_20ktf"]
+[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://Scene/An.tscn" id="4_g41yl"]
+[ext_resource type="PackedScene" uid="uid://d0wrk3rf85si2" path="res://Scene/Tombstone.tscn" id="5_20ktf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acxo1"]
 texture = ExtResource("1_g41yl")
@@ -1957,4 +1957,4 @@ position = Vector2(524, 432)
 up_direction = Vector2(0, 1)
 
 [node name="TombStone2" parent="." instance=ExtResource("5_20ktf")]
-position = Vector2(-69, -70)
+position = Vector2(1001, 443)
