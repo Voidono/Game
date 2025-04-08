@@ -88,7 +88,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 10
 theme_override_fonts/font = ExtResource("2_hytm2")
 theme_override_font_sizes/font_size = 80
-text = "Giai cuu mien nam"
+text = "Giai phong mien nam"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Container/Button" to="." method="_on_button_pressed"]

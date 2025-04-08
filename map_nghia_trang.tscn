@@ -1,13 +1,8 @@
-[gd_scene load_steps=6 format=4 uid="uid://dh3ek6p2e21eu"]
+[gd_scene load_steps=6 format=4 uid="uid://dorrwx1ot2r7y"]
 
 [ext_resource type="Texture2D" uid="uid://dikslmb0ftyld" path="res://map cho chapter 1/nghĩa trang/map_nghia_trang.png" id="1_j7h33"]
-<<<<<<< Updated upstream:Scene/map_nghia_trang.tscn
-[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://Scene/An.tscn" id="2_qftnq"]
-
-=======
-[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://An.tscn" id="2_qftnq"]
-[ext_resource type="PackedScene" uid="uid://d0wrk3rf85si2" path="res://Tombstone.tscn" id="3_qftnq"]
->>>>>>> Stashed changes:map_nghia_trang.tscn
+[ext_resource type="PackedScene" uid="uid://dnp84pkkeeyjf" path="res://An.tscn" id="2_qftnq"]
+[ext_resource type="PackedScene" uid="uid://djjvl5nty8ot5" path="res://Tombstone.tscn" id="3_qftnq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0i5v3"]
 texture = ExtResource("1_j7h33")
@@ -1834,3 +1829,4 @@ position = Vector2(665, 449)
 
 [node name="TombStone" parent="." instance=ExtResource("3_qftnq")]
 position = Vector2(40, 466)
+script = null

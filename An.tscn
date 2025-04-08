@@ -1,6 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://cnippqgj4d6co"]
+[gd_scene load_steps=13 format=3 uid="uid://dnp84pkkeeyjf"]
 
-[ext_resource type="Script" uid="uid://jon0aqe5e3f1" path="res://Script/character_body_2d.gd" id="1_051r2"]
+[ext_resource type="Script" uid="uid://cebj4l5om8khr" path="res://character_body_2d.gd" id="1_051r2"]
 [ext_resource type="Texture2D" uid="uid://ccbmxr7k5kj1b" path="res://map cho chapter 1/model run/model_run1.png" id="2_3avo1"]
 [ext_resource type="Texture2D" uid="uid://b4i12bap2k16a" path="res://map cho chapter 1/nghĩa trang/An1.png" id="2_ed3wl"]
 [ext_resource type="Texture2D" uid="uid://dcltja2os2fx2" path="res://map cho chapter 1/model run/model_run2.png" id="3_ocebo"]
@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://buxhnhse4rrvw" path="res://map cho chapter 1/model run/model_run8.png" id="9_a4bnt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qelg8"]
-size = Vector2(34, 105)
+size = Vector2(34, 96)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hu4r4"]
 animations = [{
@@ -58,7 +58,7 @@ animations = [{
 script = ExtResource("1_051r2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 5.5)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_qelg8")
 
 [node name="Camera2D" type="Camera2D" parent="."]

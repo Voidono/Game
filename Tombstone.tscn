@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://djjvl5nty8ot5"]
+
+[ext_resource type="Script" uid="uid://br3ho6nmcfyo" path="res://Script/tombstone_1.gd" id="1_kk0hp"]
+[ext_resource type="Texture2D" uid="uid://5dqviva2k0h5" path="res://map cho chapter 1/nghĩa trang/tombstone1.png" id="2_ua404"]
+[ext_resource type="Texture2D" uid="uid://bcgymtllgltag" path="res://map cho chapter 1/nghĩa trang/task.png" id="3_cius7"]
+
+[node name="TombStone" type="Node2D"]
+script = ExtResource("1_kk0hp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -4.76837e-07)
+scale = Vector2(1.15217, 1.27259)
+texture = ExtResource("2_ua404")
+
+[node name="ExclamationMark" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(27, -39)
+scale = Vector2(0.8125, 0.718747)
+texture = ExtResource("3_cius7")
+
+[node name="DialogueBox" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 33.0
+offset_top = -52.0
+offset_right = 199.0
+offset_bottom = -20.0
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0421687
+anchor_top = 0.03125
+anchor_right = 0.0421687
+anchor_bottom = 0.03125
+offset_right = 236.0
+offset_bottom = 40.0
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 15
+text = "xin chào"
+metadata/_edit_use_anchors_ = true
