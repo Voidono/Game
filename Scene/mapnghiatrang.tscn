@@ -1957,4 +1957,4 @@ position = Vector2(524, 432)
 up_direction = Vector2(0, 1)
 
 [node name="TombStone" parent="." instance=ExtResource("5_20ktf")]
-position = Vector2(-64, 457)
+position = Vector2(999, 442)
