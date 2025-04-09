@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://cb2egxtovblmh" path="res://Script/an.gd" id="3_2iahu"]
 [ext_resource type="Texture2D" uid="uid://bcgymtllgltag" path="res://map cho chapter 1/nghĩa trang/task.png" id="4_ukx23"]
 
-
 [node name="Node2D" type="Node2D"]
 
 [node name="CongBachKhoa1" type="Sprite2D" parent="."]
