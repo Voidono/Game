@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bcgymtllgltag" path="res://map cho chapter 1/nghĩa trang/task.png" id="3_cius7"]
 
 [node name="TombStone" type="Node2D"]
+position = Vector2(300, 311)
 script = ExtResource("1_kk0hp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
