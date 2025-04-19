@@ -1,36 +1,67 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmnrhbgr3h76g"]
+[gd_scene load_steps=9 format=3 uid="uid://dmnrhbgr3h76g"]
 
 [ext_resource type="Texture2D" uid="uid://c0kwxy8r4vt6v" path="res://map cho chapter 1/cong_bach_khoa1.png" id="1_gwwqb"]
-[ext_resource type="Texture2D" uid="uid://c760ng8r0p2x7" path="res://Res/player and NPC/An1.png" id="2_gu7oh"]
-[ext_resource type="Script" uid="uid://cb2egxtovblmh" path="res://Script/an.gd" id="3_2iahu"]
+[ext_resource type="Texture2D" uid="uid://baxdnarqlbh1c" path="res://Res/Character/nguoi me.png" id="3_c6eyh"]
 [ext_resource type="Texture2D" uid="uid://bcgymtllgltag" path="res://map cho chapter 1/nghĩa trang/task.png" id="4_ukx23"]
+[ext_resource type="PackedScene" uid="uid://dnp84pkkeeyjf" path="res://An.tscn" id="5_0db1h"]
+[ext_resource type="PackedScene" uid="uid://cpe1na2qpfnji" path="res://Scene/Car.tscn" id="6_0db1h"]
+[ext_resource type="Texture2D" uid="uid://0jx1y0jrftj8" path="res://Res/Character/linh1.png" id="7_l2i78"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l2i78"]
+radius = 18.0
+height = 98.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rcswn"]
+radius = 18.0
+height = 96.0
+
+[node name="Node2D2" type="Node2D"]
 
 [node name="CongBachKhoa1" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(873, 306.5)
-scale = Vector2(1.45, 1.36222)
+position = Vector2(1302.76, 458.25)
+scale = Vector2(2.16554, 2.03444)
 texture = ExtResource("1_gwwqb")
 
-[node name="An1" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(949.5, 440.706)
-scale = Vector2(0.735294, 0.735294)
-texture = ExtResource("2_gu7oh")
-script = ExtResource("3_2iahu")
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1378, 684)
 
-[node name="ExclamationMark" type="Sprite2D" parent="An1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, -15)
+shape = SubResource("CapsuleShape2D_l2i78")
+
+[node name="NguoiMe" type="Sprite2D" parent="Area2D"]
 texture_filter = 1
-position = Vector2(20.4, -46.1801)
-scale = Vector2(0.595004, 0.913751)
+position = Vector2(7.99996, 12)
+scale = Vector2(1.04, 1.0125)
+texture = ExtResource("3_c6eyh")
+
+[node name="ExclamationMask" type="Sprite2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(-276, 17.0001)
+scale = Vector2(0.375003, 0.5625)
 texture = ExtResource("4_ukx23")
+offset = Vector2(781.327, -135.111)
 
-[node name="DialogueBox" type="RichTextLabel" parent="An1"]
-visible = false
-offset_left = 25.16
-offset_top = -39.0402
-offset_right = 94.16
-offset_bottom = -17.0402
-theme_override_font_sizes/normal_font_size = 8
-text = "xin chào tôi là an"
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_0db1h")]
+position = Vector2(1450, 657)
+
+[node name="Car" parent="." instance=ExtResource("6_0db1h")]
+position = Vector2(226, 608)
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(502, 637)
+shape = SubResource("CapsuleShape2D_rcswn")
+
+[node name="Linh1" type="Sprite2D" parent="Area2D2"]
+texture_filter = 1
+position = Vector2(510, 619)
+texture = ExtResource("7_l2i78")
+
+[node name="ExclamationMask" type="Sprite2D" parent="Area2D2"]
+texture_filter = 1
+position = Vector2(521, 595)
+scale = Vector2(0.531247, 0.568359)
+texture = ExtResource("4_ukx23")
