@@ -1956,5 +1956,5 @@ z_index = 2
 position = Vector2(524, 432)
 up_direction = Vector2(0, 1)
 
-[node name="TombStone2" parent="." instance=ExtResource("5_20ktf")]
-position = Vector2(1001, 443)
+[node name="TombStone" parent="." instance=ExtResource("5_20ktf")]
+position = Vector2(999, 442)

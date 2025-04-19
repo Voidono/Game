@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cg3bigxy4v2qu"
+path="res://.godot/imported/tombstone.dialogue-8309bf98af3889a77b4371a1a54ab3e3.tres"
+
+[deps]
+
+source_file="res://Dialogue/tombstone.dialogue"
+dest_files=["res://.godot/imported/tombstone.dialogue-8309bf98af3889a77b4371a1a54ab3e3.tres"]
+
+[params]
+
+defaults=true

@@ -1,58 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0wrk3rf85si2"]
+[gd_scene load_steps=5 format=3 uid="uid://d0wrk3rf85si2"]
 
 [ext_resource type="Script" uid="uid://br3ho6nmcfyo" path="res://Script/tombstone_1.gd" id="1_kk0hp"]
-[ext_resource type="Texture2D" uid="uid://bhynavqwog4kn" path="res://Res/tombstone1.png" id="2_ua404"]
+[ext_resource type="Texture2D" uid="uid://5dqviva2k0h5" path="res://map cho chapter 1/nghĩa trang/tombstone1.png" id="2_ua404"]
 [ext_resource type="Texture2D" uid="uid://bcgymtllgltag" path="res://map cho chapter 1/nghĩa trang/task.png" id="3_cius7"]
 
-[node name="TombStone" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6x0k5"]
+size = Vector2(50, 74)
+
+[node name="TombStone" type="Area2D"]
 script = ExtResource("1_kk0hp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-<<<<<<< Updated upstream:Scene/Tombstone.tscn
-position = Vector2(3.99999, -3.21896)
-scale = Vector2(0.913043, 1.00847)
-=======
 texture_filter = 1
 position = Vector2(0, -4.76837e-07)
 scale = Vector2(1.15217, 1.27259)
->>>>>>> Stashed changes:Tombstone.tscn
 texture = ExtResource("2_ua404")
 
 [node name="ExclamationMark" type="Sprite2D" parent="."]
 texture_filter = 1
-<<<<<<< Updated upstream:Scene/Tombstone.tscn
-position = Vector2(28, -32.469)
-scale = Vector2(0.625, 0.718747)
-=======
 position = Vector2(27, -39)
 scale = Vector2(0.8125, 0.718747)
->>>>>>> Stashed changes:Tombstone.tscn
 texture = ExtResource("3_cius7")
 
-[node name="DialogueBox" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 31.75
-offset_top = -49.0
-offset_right = 140.75
-offset_bottom = -30.0
-tooltip_text = "	Tớ lại đến thăm các cậu đây, năm nay tết ấm no. Tớ thắp cho các cậu mấy nén hương."
-metadata/_edit_use_anchors_ = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="DialogueBox"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.232569
-anchor_top = -23.392
-anchor_right = -0.232569
-anchor_bottom = -23.392
-offset_left = 3.60001
-offset_top = -5.52173
-offset_right = 187.6
-offset_bottom = 15.4783
-theme_override_font_sizes/mono_font_size = 2
-theme_override_font_sizes/normal_font_size = 7
-text = "•	Tớ lại đến thăm các cậu đây, năm nay tết ấm no. Tớ thắp cho các cậu mấy nén hương."
-tab_size = 1
-metadata/_edit_use_anchors_ = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_6x0k5")

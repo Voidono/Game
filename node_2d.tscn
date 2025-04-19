@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw542qrspdowi"]
+
+[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://Scene/An.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://d0wrk3rf85si2" path="res://Scene/Tombstone.tscn" id="2_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(609, 39)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(190.5, 130.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="TombStone" parent="." instance=ExtResource("2_epypp")]
+position = Vector2(200, 65)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_0e48y")]
+position = Vector2(200, 65)
