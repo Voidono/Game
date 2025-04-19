@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://2abqet2j6vv1"]
+
+[ext_resource type="Texture2D" uid="uid://3lv7fymxx7fj" path="res://Res/bongbongchat1.png" id="1_fgv0d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7ixm"]
+atlas = ExtResource("1_fgv0d")
+region = Rect2(16, 3, 161, 60)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ctacc"]
+texture = SubResource("AtlasTexture_m7ixm")
+
+[resource]
+CharacterNameTexture/base_type = &"RichTextLabel"
+CharacterNameTexture/font_sizes/normal_font_size = 10
+DialogueText/base_type = &"RichTextLabel"
+DialogueText/font_sizes/normal_font_size = 14
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+Panel/styles/panel = SubResource("StyleBoxTexture_ctacc")
