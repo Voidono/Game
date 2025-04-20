@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://b5m6isayxd84"]
+[gd_scene load_steps=11 format=4 uid="uid://b5m6isayxd84"]
 
 [ext_resource type="Texture2D" uid="uid://bcdk370uqrve6" path="res://Res/Map/thanh_co.png" id="1_qkb2b"]
 [ext_resource type="Texture2D" uid="uid://bary6auyfo0so" path="res://Res/Map/song11.png" id="2_nybgl"]
 [ext_resource type="PackedScene" uid="uid://dnp84pkkeeyjf" path="res://An.tscn" id="3_xacyh"]
 [ext_resource type="Texture2D" uid="uid://d3we8s73ehm0d" path="res://Res/Character/linh2.png" id="4_lnm0f"]
 [ext_resource type="Texture2D" uid="uid://cqkiphk4x1b1x" path="res://Res/Character/linh3.png" id="5_283hf"]
+[ext_resource type="PackedScene" uid="uid://cf1xe4uhy6en" path="res://trans.tscn" id="6_283hf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nybgl"]
 texture = ExtResource("2_nybgl")
@@ -3576,3 +3577,6 @@ shape = SubResource("RectangleShape2D_g6xb1")
 texture_filter = 1
 position = Vector2(2999, 391)
 texture = ExtResource("5_283hf")
+
+[node name="Node2D" parent="." instance=ExtResource("6_283hf")]
+position = Vector2(1896, 16)
