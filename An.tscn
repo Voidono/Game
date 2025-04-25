@@ -54,7 +54,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="An" type="CharacterBody2D"]
 script = ExtResource("1_051r2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -62,7 +62,7 @@ position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_qelg8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.25, 1.25)
+zoom = Vector2(2, 2)
 
 [node name="container" type="Node2D" parent="."]
 position = Vector2(0, 5.75)
