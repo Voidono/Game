@@ -12,7 +12,8 @@ scale = Vector2(1.0545, 1.32)
 texture = ExtResource("3_8g882")
 
 [node name="Character" parent="." instance=ExtResource("2_7g26p")]
-position = Vector2(-2, -5)
+z_index = 2
+position = Vector2(4, 5)
 
 [node name="ProjectileSpawner" parent="." instance=ExtResource("3_pmv7m")]
 texture_filter = 1

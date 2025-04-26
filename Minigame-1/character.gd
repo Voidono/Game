@@ -30,8 +30,7 @@ func _process(delta):
 	
 	# Move and clamp to screen (stay near bottom for swimmer theme)
 	position += velocity * delta
-	position.x = clamp(position.x, 0, SCREEN_WIDTH)
-	position.y = clamp(position.y, SCREEN_HEIGHT - 100, SCREEN_HEIGHT)  # Limited vertical range
+
 
 func _on_area_entered(area):
 	if area.is_in_group("bomb"):  # Assuming bombs are in "bomb" group

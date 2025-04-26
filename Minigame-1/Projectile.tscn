@@ -5,7 +5,8 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_187x4"]
 
-[node name="Projectile" type="Area2D"]
+[node name="Projectile" type="Area2D" groups=["bomb"]]
+z_index = 2
 script = ExtResource("1_187x4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

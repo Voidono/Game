@@ -36,6 +36,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 [global_group]
 
 player=""
+bomb=""
 
 [input]
 

@@ -29,3 +29,7 @@ func spawn_cluster_shrapnel():
 		shrapnel.is_cluster = false  # Prevent infinite clusters
 		shrapnel.scale = Vector2(0.5, 0.5)  # Smaller size
 		get_parent().add_child(shrapnel)
+
+
+func _on_body_entered(body):
+	pass # Replace with function body.
