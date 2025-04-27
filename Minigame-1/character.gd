@@ -8,8 +8,7 @@ const SCREEN_HEIGHT: int = 600
 var screen_size: Vector2 = Vector2(SCREEN_WIDTH, SCREEN_HEIGHT)
 
 func _ready():
-	screen_size = Vector2(SCREEN_WIDTH, SCREEN_HEIGHT)  # Fixed 800x600
-	position = Vector2(SCREEN_WIDTH / 2, SCREEN_HEIGHT - 50)  # Start near bottom
+	position = Vector2(SCREEN_WIDTH / 2, SCREEN_HEIGHT - 130)  # Start near bottom
 	add_to_group("player")  # For spawner tracking (if you add aimed bombs later)
 
 func _process(delta):

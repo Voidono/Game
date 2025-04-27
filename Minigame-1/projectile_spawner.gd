@@ -22,7 +22,6 @@ var swoop_active: bool = false
 var swoop_target_y: float = 0
 
 func _ready():
-	position = Vector2(SCREEN_WIDTH / 4, 50)  # Start near left
 	set_random_timer()
 	timer.one_shot = false
 	timer.connect("timeout", _on_timer_timeout)
@@ -31,16 +30,8 @@ func _ready():
 func _process(delta):
 	time_alive += delta
 	
-	# Handle barrel roll (for cluster bombs)
-	if roll_active:
-		roll_timer -= delta
-		position.x += roll_direction * 200 * delta  # Lateral shift
-		sprite.rotation = lerp(sprite.rotation, roll_direction * PI, delta * 10)  # Full roll
-		if roll_timer <= 0:
-			roll_active = false
-			sprite.rotation = 0
 	# Handle swoop (for line bombs)
-	elif swoop_active:
+	if swoop_active:
 		position.y = move_toward(position.y, swoop_target_y, 100 * delta)  # Smooth swoop
 		sprite.rotation = lerp(sprite.rotation, 0.3, delta * 5)  # Tilt downward
 		if abs(position.y - swoop_target_y) < 5:
@@ -95,7 +86,7 @@ func spawn_line_bombs():
 		get_parent().add_child(bomb)
 	if not swoop_active and not roll_active:
 		swoop_active = true		
-		swoop_target_y = randf_range(100, SCREEN_HEIGHT / 5)
+		swoop_target_y = randf_range(100, SCREEN_HEIGHT / 6)
 
 func spawn_cluster_bombs():
 	var bomb = bomb_scene.instantiate()

@@ -10,7 +10,7 @@ size = Vector2(33, 88)
 [node name="Character" type="Node2D"]
 
 [node name="CharacterBody2D" type="Area2D" parent="." groups=["player"]]
-position = Vector2(406, 334)
+position = Vector2(408, 358)
 script = ExtResource("1_q5f08")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -21,19 +21,24 @@ shape = SubResource("RectangleShape2D_q5f08")
 texture_filter = 1
 texture = ExtResource("1_qfbro")
 
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(378, 6)
+scale = Vector2(3.27344, 4.65737)
+texture_normal = ExtResource("3_us202")
+action = "Right"
+metadata/_edit_lock_ = true
+
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0)
+position = Vector2(-5, 0)
 scale = Vector2(3.00781, 4.64063)
 texture_normal = ExtResource("3_us202")
 action = "Left"
 metadata/_edit_lock_ = true
 
-[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-position = Vector2(383, 6)
-scale = Vector2(3.27344, 4.65737)
-texture_normal = ExtResource("3_us202")
-action = "Right"
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(400, 298)
 metadata/_edit_lock_ = true
 
 [connection signal="area_entered" from="CharacterBody2D" to="CharacterBody2D" method="_on_area_entered"]
