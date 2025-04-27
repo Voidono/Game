@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbwfaibcupvx4"]
+
+[ext_resource type="Script" uid="uid://uckfjfh638nj" path="res://old_an.gd" id="1_sq1u5"]
+[ext_resource type="Texture2D" uid="uid://06el06g6d8xq" path="res://Res/Character/An5.png" id="1_trkya"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sq1u5"]
+size = Vector2(34, 86)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_80ifc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_trkya")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"running",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_sq1u5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_sq1u5")
+
+[node name="Container" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Container"]
+texture_filter = 1
+position = Vector2(13.5, 10.75)
+scale = Vector2(0.921875, 0.921875)
+sprite_frames = SubResource("SpriteFrames_80ifc")
+animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cf1xe4uhy6en"]
 
-[ext_resource type="Script" uid="uid://cgtnr0dwb6dpo" path="res://animation_player.gd" id="1_rptcu"]
+[ext_resource type="Script" uid="uid://cgtnr0dwb6dpo" path="res://Script/animation_player.gd" id="1_rptcu"]
+
 
 [sub_resource type="Animation" id="Animation_oixiv"]
 length = 0.001
