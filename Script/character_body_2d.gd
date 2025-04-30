@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var speed: float = 200.0
+@export var speed: float = 300.0
 @export var gravity: float = 500.0
 @onready var anim = get_node("container/AnimatedSprite2D")
 @onready var container = get_node("container")

@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://bcdk370uqrve6" path="res://Res/Map/thanh_co.png" id="1_qkb2b"]
 [ext_resource type="Texture2D" uid="uid://bary6auyfo0so" path="res://Res/Map/song11.png" id="2_nybgl"]
-[ext_resource type="PackedScene" uid="uid://dnp84pkkeeyjf" path="res://An.tscn" id="3_xacyh"]
 [ext_resource type="Texture2D" uid="uid://d3we8s73ehm0d" path="res://Res/Character/linh2.png" id="4_lnm0f"]
 [ext_resource type="Texture2D" uid="uid://cqkiphk4x1b1x" path="res://Res/Character/linh3.png" id="5_283hf"]
-[ext_resource type="PackedScene" uid="uid://cf1xe4uhy6en" path="res://trans.tscn" id="6_283hf"]
+[ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://Scene/An.tscn" id="6_2daf0"]
+[ext_resource type="PackedScene" uid="uid://cf1xe4uhy6en" path="res://Scene/trans.tscn" id="6_283hf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nybgl"]
 texture = ExtResource("2_nybgl")
@@ -3537,6 +3537,8 @@ height = 96.0
 size = Vector2(36, 64)
 
 [node name="Node2D" type="Node2D"]
+metadata/_edit_vertical_guides_ = [2273.0, 7391.0]
+metadata/_edit_horizontal_guides_ = [600.0]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -3550,9 +3552,6 @@ texture_filter = 1
 position = Vector2(4832, 306)
 scale = Vector2(1.0238, 1.30444)
 texture = ExtResource("1_qkb2b")
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_xacyh")]
-position = Vector2(2595, 358)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(2347, 398)
@@ -3581,3 +3580,14 @@ texture = ExtResource("5_283hf")
 [node name="Node2D" parent="." instance=ExtResource("6_283hf")]
 visible = false
 position = Vector2(1896, 16)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("6_2daf0")]
+position = Vector2(2521, 392)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(5, 0)
+zoom = Vector2(1.25, 1.25)
+limit_left = 2273
+limit_top = 0
+limit_right = 7391
+limit_bottom = 600

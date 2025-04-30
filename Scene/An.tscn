@@ -61,9 +61,6 @@ script = ExtResource("1_051r2")
 position = Vector2(0, 7.5)
 shape = SubResource("RectangleShape2D_qelg8")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.25, 1.25)
-
 [node name="container" type="Node2D" parent="."]
 position = Vector2(0, 5.75)
 scale = Vector2(1, 1.07813)

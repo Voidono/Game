@@ -22,10 +22,6 @@ func _process(delta):
 	if Input.is_action_pressed("Left"):
 		velocity.x -= 1
 	
-	if velocity.x > 0:
-		direction.scale.x = 1:
-	elif velocity.x < 0:
-		direction.scale.x = -1:
 	
 	if velocity.x == 1 or velocity.x == -1:
 		anim.play("swim")
@@ -46,4 +42,5 @@ func _process(delta):
 func _on_area_entered(area):
 	if area.is_in_group("bomb"):  # Assuming bombs are in "bomb" group
 		print("Hit by bomb! Game Over!")  # Replace with game over logic
+		get_tree().change_scene_to_file("res://Scene/thach_han.tscn")
 		# Optional: queue_free() to remove swimmer or trigger reset

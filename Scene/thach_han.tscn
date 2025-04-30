@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://b7a64jcv504av"]
+[gd_scene load_steps=8 format=4 uid="uid://b7a64jcv504av"]
 
 [ext_resource type="Texture2D" uid="uid://bary6auyfo0so" path="res://Res/Map/song11.png" id="1_km7jl"]
 [ext_resource type="Script" uid="uid://cona36bsb5gb8" path="res://Script/bomroi.gd" id="3_5mi30"]
 [ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://Scene/An.tscn" id="3_km7jl"]
+[ext_resource type="PackedScene" uid="uid://cf1xe4uhy6en" path="res://Scene/trans.tscn" id="4_epiot"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5npk3"]
 texture = ExtResource("1_km7jl")
@@ -3636,6 +3637,8 @@ sources/0 = SubResource("TileSetAtlasSource_5npk3")
 radius = 64.195
 
 [node name="Thach han" type="Node2D"]
+metadata/_edit_vertical_guides_ = [2001.0]
+metadata/_edit_horizontal_guides_ = [146.0, 593.0]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -3646,10 +3649,21 @@ tile_set = SubResource("TileSet_v0m5a")
 script = ExtResource("3_5mi30")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(801, 431)
+position = Vector2(1653, 442)
 shape = SubResource("CircleShape2D_voux2")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_km7jl")]
 position = Vector2(233, 431)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_top = 146
+limit_right = 2001
+limit_bottom = 593
+
+[node name="Node2D" parent="." instance=ExtResource("4_epiot")]
+visible = false
+position = Vector2(-41, 84)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

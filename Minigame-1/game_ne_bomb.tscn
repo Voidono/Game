@@ -5,16 +5,18 @@
 [ext_resource type="PackedScene" uid="uid://ryfhmc81g52d" path="res://Minigame-1/projectile_spawner.tscn" id="3_pmv7m"]
 
 [node name="Main_scene" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [750.0]
+metadata/_edit_vertical_guides_ = [4112.0]
 
 [node name="Song11" type="Sprite2D" parent="."]
-position = Vector2(1059.5, 297)
-scale = Vector2(1.0545, 1.32)
+position = Vector2(1259, 388)
+scale = Vector2(2.057, 1.67778)
 texture = ExtResource("3_8g882")
 
 [node name="Character" parent="." instance=ExtResource("2_7g26p")]
 z_index = 2
-position = Vector2(-3, -5)
+position = Vector2(-2, 109)
 
 [node name="ProjectileSpawner" parent="." instance=ExtResource("3_pmv7m")]
 texture_filter = 1
-position = Vector2(-4, -9)
+position = Vector2(-3, 0)
