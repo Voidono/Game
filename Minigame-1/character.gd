@@ -2,6 +2,9 @@ extends Area2D
 
 @export var normal_speed: float = 300.0  # Normal movement speed
 @export var focus_speed: float = 150.0   # Slower speed for precision
+@onready var anim = get_node("container/AnimatedSprite2D")
+@onready var container = get_node("container")
+
 var speed: float = normal_speed
 const SCREEN_WIDTH: int = 800
 const SCREEN_HEIGHT: int = 600
@@ -18,7 +21,14 @@ func _process(delta):
 		velocity.x += 1
 	if Input.is_action_pressed("Left"):
 		velocity.x -= 1
-
+	
+	if velocity.x > 0:
+		direction.scale.x = 1:
+	elif velocity.x < 0:
+		direction.scale.x = -1:
+	
+	if velocity.x == 1 or velocity.x == -1:
+		anim.play("swim")
 	
 	# Focus mode (hold Shift for precision)
 	speed = focus_speed if Input.is_action_pressed("Focus") else normal_speed
@@ -29,6 +39,8 @@ func _process(delta):
 	
 	# Move and clamp to screen (stay near bottom for swimmer theme)
 	position += velocity * delta
+	
+
 
 
 func _on_area_entered(area):

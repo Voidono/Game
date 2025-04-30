@@ -7,7 +7,6 @@ func _on_body_entered(_body:Node2D):
 
 func _process(_delta):
 	if entered == true:
-		get_tree().change_scene_to_file("res://thach_han.tscn")
+		get_tree().change_scene_to_file("res://Scene/thach_han.tscn")
 
-
-pass # Replace with function body.
+pass

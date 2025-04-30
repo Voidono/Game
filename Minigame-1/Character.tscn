@@ -1,25 +1,63 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfxeyjlamrm52"]
+[gd_scene load_steps=11 format=3 uid="uid://cfxeyjlamrm52"]
 
 [ext_resource type="Script" uid="uid://di45ld6c1g8hq" path="res://Minigame-1/character.gd" id="1_q5f08"]
-[ext_resource type="Texture2D" uid="uid://dktlb2f0rlpro" path="res://Res/Character/An2.webp" id="1_qfbro"]
+[ext_resource type="Texture2D" uid="uid://djnjqf0jh1u0m" path="res://map cho chapter 1/model swim/mainswim1.png" id="2_23od7"]
+[ext_resource type="Texture2D" uid="uid://d16vqwu3qde6u" path="res://map cho chapter 1/model swim/mainswim2.png" id="3_hsg2q"]
 [ext_resource type="Texture2D" uid="uid://4syovbpkhrgi" path="res://icon.svg" id="3_us202"]
+[ext_resource type="Texture2D" uid="uid://dj7a3qukutifs" path="res://map cho chapter 1/model swim/mainswim3.png" id="4_cn12e"]
+[ext_resource type="Texture2D" uid="uid://cyhbgqlcf817b" path="res://map cho chapter 1/model swim/mainswim4.png" id="5_2vnaf"]
+[ext_resource type="Texture2D" uid="uid://mfvfssrxopjp" path="res://map cho chapter 1/model swim/mainswim5.png" id="6_oa5ap"]
+[ext_resource type="Texture2D" uid="uid://yoihd8rltnp2" path="res://map cho chapter 1/model swim/mainswim6.png" id="7_2bcxl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5f08"]
-size = Vector2(33, 88)
+size = Vector2(47, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nnymn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_23od7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hsg2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cn12e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2vnaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oa5ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2bcxl")
+}],
+"loop": true,
+"name": &"swim",
+"speed": 6.0
+}]
 
 [node name="Character" type="Node2D"]
 
 [node name="CharacterBody2D" type="Area2D" parent="." groups=["player"]]
 position = Vector2(408, 358)
 script = ExtResource("1_q5f08")
+normal_speed = null
+focus_speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-0.5, 2)
+position = Vector2(4.5, 0)
 shape = SubResource("RectangleShape2D_q5f08")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="container" type="Node2D" parent="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/container"]
 texture_filter = 1
-texture = ExtResource("1_qfbro")
+position = Vector2(-2, 0)
+scale = Vector2(0.991071, 1)
+sprite_frames = SubResource("SpriteFrames_nnymn")
+animation = &"swim"
 
 [node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0)

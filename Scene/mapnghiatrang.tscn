@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://5dqviva2k0h5" path="res://map cho chapter 1/nghĩa trang/tombstone1.png" id="2_20ktf"]
 [ext_resource type="Texture2D" uid="uid://dt1ygi0u1eg7n" path="res://map cho chapter 1/nghĩa trang/texture game.png" id="3_g41yl"]
 [ext_resource type="PackedScene" uid="uid://d0wrk3rf85si2" path="res://Scene/Tombstone.tscn" id="5_20ktf"]
-[ext_resource type="PackedScene" path="res://old an.tscn" id="6_00igw"]
+[ext_resource type="PackedScene" uid="uid://cbwfaibcupvx4" path="res://Scene/old an.tscn" id="6_00igw"]
 [ext_resource type="PackedScene" uid="uid://cf1xe4uhy6en" path="res://trans.tscn" id="6_sckbr"]
-[ext_resource type="Script" path="res://Scene/chuyển cảnh.gd" id="7_00igw"]
+[ext_resource type="Script" uid="uid://b6heo8cbodr26" path="res://Script/chuyển cảnh.gd" id="7_00igw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acxo1"]
 texture = ExtResource("1_g41yl")
@@ -1959,7 +1959,6 @@ tile_map_data = PackedByteArray("AAABABoABAAAAAAAAAABABsABAAAAAEAAAABABwABAAAAAI
 tile_set = SubResource("TileSet_kw6ai")
 
 [node name="Node2D" parent="." instance=ExtResource("6_sckbr")]
-visible = false
 z_index = 2
 position = Vector2(-13, 4)
 
@@ -1972,6 +1971,6 @@ position = Vector2(934, -17)
 shape = SubResource("RectangleShape2D_acxo1")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("6_00igw")]
-position = Vector2(632, 418)
+position = Vector2(200, 415)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
