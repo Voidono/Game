@@ -85,8 +85,8 @@ position = Vector2(2, 10)
 scale = Vector2(0.921875, 0.921875)
 sprite_frames = SubResource("SpriteFrames_80ifc")
 animation = &"running"
-frame = 6
-frame_progress = 0.718432
+frame = 7
+frame_progress = 0.654155
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)

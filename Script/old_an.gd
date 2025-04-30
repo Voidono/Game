@@ -15,7 +15,7 @@ func _physics_process(delta):
 	var direction = Input.get_axis("Left", "Right")
 	if direction:
 		velocity.x = direction * SPEED
-	if direction == 1 or direction == -1:
+	if direction == -1 or direction == 1:
 		velocity.x = direction * SPEED
 		container.scale.x = direction
 	else:
