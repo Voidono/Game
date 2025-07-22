@@ -62,7 +62,7 @@ pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/tombstone.dialogue", "res://Voido-basement-Revive/Code/main.dialogue", "res://Game/Dialogue/tombstone.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/tombstone.dialogue")
 
 [rendering]
 

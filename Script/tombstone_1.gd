@@ -10,11 +10,6 @@ var balloon_scene = preload("res://Dialogue/game_dialogue_balloon.tscn")
 
 func _ready():
 	#debug
-	if not sprite:
-		print("Error: Sprite2D node not found in Tombstone1!")
-	if not exclamation_mark:
-		print("Error: ExclamationMark node not found in Tombstone1!")
-	
 	exclamation_mark.visible = true
 
 	# Enable input detection for Area2D
