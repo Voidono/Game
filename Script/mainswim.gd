@@ -6,6 +6,7 @@ extends CharacterBody2D
 @onready var anim = get_node("container/AnimatedSprite2D")
 @onready var container = get_node("container")
 
+
 func _physics_process(delta):
 	# Áp dụng trọng lực
 	velocity.y += gravity * delta

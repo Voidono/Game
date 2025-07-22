@@ -7,6 +7,6 @@ func _on_body_entered(_body:Node2D):
 
 func _process(_delta):
 	if entered == true:
-		get_tree().change_scene_to_file("res://Scene/bachkhoa.tscn")
+		get_tree().change_scene_to_file("res://Scene/Main_game.tscn")
 
 pass
