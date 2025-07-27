@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://qbffcjb2p0m6"]
+[gd_scene load_steps=4 format=3 uid="uid://qbffcjb2p0m6"]
 
 [ext_resource type="Texture2D" uid="uid://xq8pv1tbf10f" path="res://Res/93626143_p0_master1200.jpg" id="1_g5ca1"]
-[ext_resource type="Texture2D" path="res://Res/main frame.png" id="2_rr6ty"]
-[ext_resource type="PackedScene" path="res://Scene/main_character.tscn" id="4_rr6ty"]
+[ext_resource type="PackedScene" uid="uid://qjdjmviqfaoj" path="res://Scene/main_character.tscn" id="4_rr6ty"]
 
 [sub_resource type="GDScript" id="GDScript_g5ca1"]
 
@@ -18,7 +17,6 @@ texture = ExtResource("1_g5ca1")
 texture_filter = 1
 position = Vector2(445, 402)
 scale = Vector2(1.884, 1.884)
-texture = ExtResource("2_rr6ty")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 15.0

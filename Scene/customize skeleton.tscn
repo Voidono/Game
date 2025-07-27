@@ -1,20 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmb2fwd0vqh1o"]
+[gd_scene load_steps=3 format=3 uid="uid://cmb2fwd0vqh1o"]
 
-[ext_resource type="Script" path="res://Script/customize_skeleton.gd" id="1_j6s5w"]
-[ext_resource type="Script" path="res://Script/customize/body.gd" id="2_otl6p"]
-[ext_resource type="Texture2D" path="res://Res/Composite/character-Sheet.png" id="3_nr5cv"]
+[ext_resource type="Script" uid="uid://bl8asa1ojnlxp" path="res://customize_skeleton.gd" id="1_v1egf"]
+[ext_resource type="Texture2D" uid="uid://bcwbr2q7tj0vk" path="res://Res/composite/character-Sheet.png" id="1_vsqcc"]
 
 [node name="CharacterCustom" type="Node2D"]
-script = ExtResource("1_j6s5w")
+script = ExtResource("1_v1egf")
 
 [node name="Body" type="Node2D" parent="."]
-script = ExtResource("2_otl6p")
 
-[node name="Sprite2D" type="Sprite2D" parent="Body"]
+[node name="body" type="Sprite2D" parent="Body"]
 texture_filter = 1
 position = Vector2(240, 315)
 scale = Vector2(2.50521, 2.50521)
-texture = ExtResource("3_nr5cv")
+texture = ExtResource("1_vsqcc")
 hframes = 25
 
 [node name="ColorRect" type="ColorRect" parent="."]
