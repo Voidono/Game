@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+Global="*res://Script/customize/Global.gd"
 
 [dialogue_manager]
 
@@ -62,7 +63,7 @@ pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/tombstone.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/tombstone.dialogue", "res://Dialogue/cảnh nói chuyện trong nhà .dialogue", "res://Game/Dialogue/tombstone.dialogue", "res://Voido-basement-Revive/Code/main.dialogue", "res://Dialogue/lính Nhật tới.dialogue")
 
 [rendering]
 
