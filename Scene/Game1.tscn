@@ -1,0 +1,210 @@
+[gd_scene load_steps=13 format=3 uid="uid://e2plepb27mht"]
+
+[ext_resource type="Script" uid="uid://coqaop3mttq8r" path="res://Script/game_1.gd" id="1_c7fr0"]
+[ext_resource type="Script" uid="uid://bqy1f7c6oahch" path="res://Script/character game 1.gd" id="1_g2vjc"]
+[ext_resource type="PackedScene" uid="uid://cfo7jos2vx1qn" path="res://Scene/enemy zone.tscn" id="2_81e3u"]
+[ext_resource type="Texture2D" uid="uid://c0kwxy8r4vt6v" path="res://map cho chapter 1/cong_bach_khoa1.png" id="2_lmnit"]
+[ext_resource type="Texture2D" uid="uid://cy4jnokc7oklh" path="res://Res/Character/char1.png" id="3_6o3ng"]
+[ext_resource type="PackedScene" uid="uid://dcy0c0fit3rc0" path="res://Scene/Civilianzone.tscn" id="7_6o3ng"]
+[ext_resource type="Texture2D" uid="uid://06el06g6d8xq" path="res://Res/Character/An5.png" id="7_dmekk"]
+[ext_resource type="Texture2D" uid="uid://d3we8s73ehm0d" path="res://Res/Character/linh2.png" id="8_6o3ng"]
+[ext_resource type="PackedScene" uid="uid://bj2anakm6wwh2" path="res://deja-vu.tscn" id="9_1jtlf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_81e3u"]
+radius = 13.8138
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2vjc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7fr0"]
+size = Vector2(6782, 20)
+
+[node name="Game 1" type="Node2D"]
+script = ExtResource("1_c7fr0")
+
+[node name="GOODBOY" type="Node2D" parent="."]
+
+[node name="Civilian" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(1014, 496)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="Civilian2" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(1349, 499)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian2"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="Civilian3" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(1733, 499)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian3"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="Civilian4" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(2035, 501)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian4"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="Civilian5" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(2940, 483)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian5"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="Civilian6" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(3275, 486)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian6"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="Civilian7" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(3659, 486)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian7"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="Civilian8" parent="GOODBOY" instance=ExtResource("7_6o3ng")]
+position = Vector2(3961, 488)
+
+[node name="Linh2" type="Sprite2D" parent="GOODBOY/Civilian8"]
+texture_filter = 1
+position = Vector2(16, 25)
+scale = Vector2(1.67, 1.67)
+texture = ExtResource("8_6o3ng")
+
+[node name="BADBOY" type="Node2D" parent="."]
+
+[node name="enemyzone" parent="BADBOY" instance=ExtResource("2_81e3u")]
+position = Vector2(876, 490)
+
+[node name="An5" type="Sprite2D" parent="BADBOY/enemyzone"]
+texture_filter = 1
+position = Vector2(24, 1)
+scale = Vector2(1.82813, 1.82813)
+texture = ExtResource("7_dmekk")
+
+[node name="enemyzone2" parent="BADBOY" instance=ExtResource("2_81e3u")]
+position = Vector2(1932, 489)
+
+[node name="An5" type="Sprite2D" parent="BADBOY/enemyzone2"]
+texture_filter = 1
+position = Vector2(24, 1)
+scale = Vector2(1.82813, 1.82813)
+texture = ExtResource("7_dmekk")
+
+[node name="enemyzone3" parent="BADBOY" instance=ExtResource("2_81e3u")]
+position = Vector2(2466, 480)
+
+[node name="An5" type="Sprite2D" parent="BADBOY/enemyzone3"]
+texture_filter = 1
+position = Vector2(24, 1)
+scale = Vector2(1.82813, 1.82813)
+texture = ExtResource("7_dmekk")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(389, 519)
+scale = Vector2(1.88235, 1.88235)
+script = ExtResource("1_g2vjc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_81e3u")
+
+[node name="Char1" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(0.531235, -0.187531)
+scale = Vector2(0.880499, 0.880499)
+texture = ExtResource("3_6o3ng")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 608.0
+offset_top = 3.0
+offset_right = 797.0
+offset_bottom = 92.0
+theme_override_font_sizes/font_size = 35
+text = "Time
+score"
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+offset_left = -8.0
+offset_top = 195.0
+offset_right = 794.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 100
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_repeat = 2
+motion_offset = Vector2(0.5, 1)
+
+[node name="CongBachKhoa1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_filter = 1
+position = Vector2(799, 303)
+scale = Vector2(1.32222, 1.32222)
+texture = ExtResource("2_lmnit")
+metadata/_edit_lock_ = true
+
+[node name="CongBachKhoa2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_filter = 1
+position = Vector2(2382, 303)
+scale = Vector2(1.32222, 1.32222)
+texture = ExtResource("2_lmnit")
+metadata/_edit_lock_ = true
+
+[node name="CongBachKhoa3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_filter = 1
+position = Vector2(4169, 303)
+scale = Vector2(1.65667, 1.32604)
+texture = ExtResource("2_lmnit")
+metadata/_edit_lock_ = true
+
+[node name="CongBachKhoa4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_filter = 1
+position = Vector2(5948.91, 300.595)
+scale = Vector2(1.31848, 1.3182)
+texture = ExtResource("2_lmnit")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ParallaxBackground/ParallaxLayer"]
+physics_material_override = SubResource("PhysicsMaterial_g2vjc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground/ParallaxLayer/StaticBody2D"]
+position = Vector2(3349, 583)
+shape = SubResource("RectangleShape2D_c7fr0")
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("9_1jtlf")]
+position = Vector2(376, -184)

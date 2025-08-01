@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcy0c0fit3rc0"]
+
+[ext_resource type="Script" uid="uid://xlmivk00pf5c" path="res://Script/civilian_zone.gd" id="1_rh0yi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqjv"]
+size = Vector2(55.5, 113)
+
+[node name="Area2D" type="Area2D" groups=["good"]]
+script = ExtResource("1_rh0yi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_mgqjv")

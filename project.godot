@@ -38,6 +38,8 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 player=""
 bomb=""
+bad=""
+good=""
 
 [input]
 

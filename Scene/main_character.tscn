@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://qjdjmviqfaoj"]
 
-[ext_resource type="Texture2D" uid="uid://bcwbr2q7tj0vk" path="res://Res/Composite/character-Sheet.png" id="2_uvl38"]
+[ext_resource type="Texture2D" uid="uid://bcwbr2q7tj0vk" path="res://Res/composite/character-Sheet.png" id="2_uvl38"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2q423"]
 radius = 48.0937

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmb2fwd0vqh1o"]
 
-[ext_resource type="Script" uid="uid://bl8asa1ojnlxp" path="res://customize_skeleton.gd" id="1_v1egf"]
+[ext_resource type="Script" uid="uid://bl8asa1ojnlxp" path="res://Script/customize_skeleton.gd" id="1_v1egf"]
 [ext_resource type="Texture2D" uid="uid://bcwbr2q7tj0vk" path="res://Res/composite/character-Sheet.png" id="1_vsqcc"]
 
 [node name="CharacterCustom" type="Node2D"]

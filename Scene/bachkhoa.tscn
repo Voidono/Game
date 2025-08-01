@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dmnrhbgr3h76g"]
+[gd_scene load_steps=18 format=4 uid="uid://dmnrhbgr3h76g"]
 
 [ext_resource type="Texture2D" uid="uid://c0kwxy8r4vt6v" path="res://map cho chapter 1/cong_bach_khoa1.png" id="1_gwwqb"]
 [ext_resource type="Texture2D" uid="uid://baxdnarqlbh1c" path="res://Res/Character/nguoi me.png" id="3_c6eyh"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cf1xe4uhy6en" path="res://Scene/trans.tscn" id="7_rcswn"]
 [ext_resource type="Texture2D" uid="uid://bq0vo6asom5e4" path="res://Res/cong_bach_khoa1.png" id="8_36jhx"]
 [ext_resource type="PackedScene" uid="uid://cnippqgj4d6co" path="res://Scene/An.tscn" id="8_l2i78"]
+[ext_resource type="Script" uid="uid://bqy1f7c6oahch" path="res://Script/character game 1.gd" id="10_uf6a7"]
+[ext_resource type="Texture2D" uid="uid://cy4jnokc7oklh" path="res://Res/Character/char1.png" id="11_crf5f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uf6a7"]
 texture = ExtResource("8_36jhx")
@@ -2152,6 +2154,9 @@ height = 98.0
 radius = 18.0
 height = 96.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_hlrrv"]
+radius = 13.8138
+
 [node name="Node2D2" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [912.0]
 metadata/_edit_vertical_guides_ = [2594.0]
@@ -2239,5 +2244,19 @@ limit_left = 0
 limit_top = 0
 limit_right = 2594
 limit_bottom = 912
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+position = Vector2(426, 630)
+scale = Vector2(1.88235, 1.88235)
+script = ExtResource("10_uf6a7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2"]
+shape = SubResource("CircleShape2D_hlrrv")
+
+[node name="Char1" type="Sprite2D" parent="CharacterBody2D2"]
+texture_filter = 1
+position = Vector2(0.531235, -0.187531)
+scale = Vector2(0.880499, 0.880499)
+texture = ExtResource("11_crf5f")
 
 [connection signal="body_entered" from="Car/Area2D2" to="Car/Area2D2" method="_on_body_entered"]
