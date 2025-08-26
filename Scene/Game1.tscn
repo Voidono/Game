@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://coqaop3mttq8r" path="res://Script/game_1.gd" id="1_c7fr0"]
 [ext_resource type="Script" uid="uid://bqy1f7c6oahch" path="res://Script/character game 1.gd" id="1_g2vjc"]
 [ext_resource type="PackedScene" uid="uid://cfo7jos2vx1qn" path="res://Scene/enemy zone.tscn" id="2_81e3u"]
-[ext_resource type="Texture2D" uid="uid://c0kwxy8r4vt6v" path="res://map cho chapter 1/cong_bach_khoa1.png" id="2_lmnit"]
 [ext_resource type="Texture2D" uid="uid://cy4jnokc7oklh" path="res://Res/Character/char1.png" id="3_6o3ng"]
 [ext_resource type="PackedScene" uid="uid://dcy0c0fit3rc0" path="res://Scene/Civilianzone.tscn" id="7_6o3ng"]
 [ext_resource type="Texture2D" uid="uid://06el06g6d8xq" path="res://Res/Character/An5.png" id="7_dmekk"]
+[ext_resource type="Texture2D" uid="uid://bykxqoaao3qfo" path="res://map cho chapter 1/QuangTruong3Dinh.png" id="8_1jtlf"]
 [ext_resource type="Texture2D" uid="uid://d3we8s73ehm0d" path="res://Res/Character/linh2.png" id="8_6o3ng"]
-[ext_resource type="PackedScene" uid="uid://bj2anakm6wwh2" path="res://deja-vu.tscn" id="9_1jtlf"]
+[ext_resource type="PackedScene" uid="uid://bj2anakm6wwh2" path="res://Scene/deja-vu.tscn" id="9_1jtlf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_81e3u"]
 radius = 13.8138
@@ -171,40 +171,17 @@ metadata/_edit_use_anchors_ = true
 texture_repeat = 2
 motion_offset = Vector2(0.5, 1)
 
-[node name="CongBachKhoa1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-texture_filter = 1
-position = Vector2(799, 303)
-scale = Vector2(1.32222, 1.32222)
-texture = ExtResource("2_lmnit")
-metadata/_edit_lock_ = true
-
-[node name="CongBachKhoa2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-texture_filter = 1
-position = Vector2(2382, 303)
-scale = Vector2(1.32222, 1.32222)
-texture = ExtResource("2_lmnit")
-metadata/_edit_lock_ = true
-
-[node name="CongBachKhoa3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-texture_filter = 1
-position = Vector2(4169, 303)
-scale = Vector2(1.65667, 1.32604)
-texture = ExtResource("2_lmnit")
-metadata/_edit_lock_ = true
-
-[node name="CongBachKhoa4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-texture_filter = 1
-position = Vector2(5948.91, 300.595)
-scale = Vector2(1.31848, 1.3182)
-texture = ExtResource("2_lmnit")
-metadata/_edit_lock_ = true
-
 [node name="StaticBody2D" type="StaticBody2D" parent="ParallaxBackground/ParallaxLayer"]
 physics_material_override = SubResource("PhysicsMaterial_g2vjc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground/ParallaxLayer/StaticBody2D"]
 position = Vector2(3349, 583)
 shape = SubResource("RectangleShape2D_c7fr0")
+
+[node name="QuangTruong3Dinh" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(6990, 330)
+scale = Vector2(1.09333, 1.09333)
+texture = ExtResource("8_1jtlf")
 
 [node name="AudioStreamPlayer2D" parent="." instance=ExtResource("9_1jtlf")]
 position = Vector2(376, -184)

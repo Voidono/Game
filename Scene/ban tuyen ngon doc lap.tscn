@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbjfhcjm7smbj"]
+
+[ext_resource type="AudioStream" uid="uid://cqvhknjm520jg" path="res://music/Toàn văn_ Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập năm 1945 _ Nghe giọng Bác Hồ chân thực nhất [34GKvR8nZus].mp3" id="1_x7nlv"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_x7nlv")
+autoplay = true

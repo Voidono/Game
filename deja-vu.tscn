@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bj2anakm6wwh2"]
-
-[ext_resource type="AudioStream" uid="uid://c72vqrllqn2x3" path="res://music/Initial D - Deja Vu - Pretty ok (youtube).wav" id="1_m7d7v"]
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
-stream = ExtResource("1_m7d7v")
-autoplay = true

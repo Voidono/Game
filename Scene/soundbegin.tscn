@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3vcw0tfddogu"]
+
+[ext_resource type="Texture2D" uid="uid://2pu5hikxgp7h" path="res://map cho chapter 1/background1.png" id="1_tpbo2"]
+[ext_resource type="PackedScene" uid="uid://bbjfhcjm7smbj" path="res://Scene/ban tuyen ngon doc lap.tscn" id="2_hbj3t"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(406, 299)
+scale = Vector2(0.663333, 1)
+texture = ExtResource("1_tpbo2")
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("2_hbj3t")]
