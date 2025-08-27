@@ -26,6 +26,8 @@ runtime/balloon_path="res://Scene/balloon.tscn"
 
 [display]
 
+window/size/viewport_width=800
+window/size/viewport_height=600
 window/stretch/mode="viewport"
 
 [editor_plugins]
@@ -63,7 +65,7 @@ pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue/tombstone.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue/tombstone.dialogue", "res://Game/Dialogue/tombstone.dialogue")
 
 [rendering]
 

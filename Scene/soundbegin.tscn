@@ -6,7 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(406, 299)
+position = Vector2(399, 301)
 scale = Vector2(0.663333, 1)
 texture = ExtResource("1_tpbo2")
 
