@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://e2plepb27mht"]
+[gd_scene load_steps=16 format=3 uid="uid://e2plepb27mht"]
 
 [ext_resource type="Script" uid="uid://coqaop3mttq8r" path="res://Script/game_1.gd" id="1_c7fr0"]
 [ext_resource type="Script" uid="uid://bqy1f7c6oahch" path="res://Script/character game 1.gd" id="1_g2vjc"]
@@ -6,9 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://cy4jnokc7oklh" path="res://Res/Character/char1.png" id="3_6o3ng"]
 [ext_resource type="PackedScene" uid="uid://dcy0c0fit3rc0" path="res://Scene/Civilianzone.tscn" id="7_6o3ng"]
 [ext_resource type="Texture2D" uid="uid://06el06g6d8xq" path="res://Res/Character/An5.png" id="7_dmekk"]
-[ext_resource type="Texture2D" uid="uid://bykxqoaao3qfo" path="res://map cho chapter 1/QuangTruong3Dinh.png" id="8_1jtlf"]
+[ext_resource type="Texture2D" uid="uid://bykxqoaao3qfo" path="res://Res/image/QuangTruong3Dinh.png" id="8_1jtlf"]
 [ext_resource type="Texture2D" uid="uid://d3we8s73ehm0d" path="res://Res/Character/linh2.png" id="8_6o3ng"]
 [ext_resource type="PackedScene" uid="uid://bj2anakm6wwh2" path="res://Scene/deja-vu.tscn" id="9_1jtlf"]
+[ext_resource type="Texture2D" uid="uid://b7xqsyo2hvxmt" path="res://Res/image/background2.png" id="9_n4dl3"]
+[ext_resource type="Texture2D" uid="uid://cqoyoi4y461b4" path="res://Res/image/background3 (1).png" id="10_p8ann"]
+[ext_resource type="Texture2D" uid="uid://cdjdxagsvcjm3" path="res://Res/image/background3.png" id="12_56xay"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_81e3u"]
 radius = 13.8138
@@ -183,5 +186,17 @@ position = Vector2(6990, 330)
 scale = Vector2(1.09333, 1.09333)
 texture = ExtResource("8_1jtlf")
 
+[node name="Background2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1596, 284)
+texture = ExtResource("9_n4dl3")
+
+[node name="Background3(1)" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(3196, 284)
+texture = ExtResource("10_p8ann")
+
 [node name="AudioStreamPlayer2D" parent="." instance=ExtResource("9_1jtlf")]
 position = Vector2(376, -184)
+
+[node name="Background3" type="Sprite2D" parent="."]
+position = Vector2(4796, 284)
+texture = ExtResource("12_56xay")

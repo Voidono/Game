@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://lfv568rbrkxd"
-path="res://.godot/imported/punk kid.ttf-6f64b2abb2f74cdcafffa7316088dbf4.fontdata"
+path="res://.godot/imported/punk kid.ttf-07b59ecca9a73344d7dbd329c258d5df.fontdata"
 
 [deps]
 
-source_file="res://Res/punk kid.ttf"
-dest_files=["res://.godot/imported/punk kid.ttf-6f64b2abb2f74cdcafffa7316088dbf4.fontdata"]
+source_file="res://Res/image/punk kid.ttf"
+dest_files=["res://.godot/imported/punk kid.ttf-07b59ecca9a73344d7dbd329c258d5df.fontdata"]
 
 [params]
 

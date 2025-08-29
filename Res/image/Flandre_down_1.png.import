@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwrxklwysyjo0"
-path="res://.godot/imported/car.png-383a33a095a014b358ba060dabb5adf7.ctex"
+uid="uid://b2l71xbvqc7ik"
+path="res://.godot/imported/Flandre_down_1.png-6ea24dc33cef20c84449b2815c4417f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map cho chapter 1/car.png"
-dest_files=["res://.godot/imported/car.png-383a33a095a014b358ba060dabb5adf7.ctex"]
+source_file="res://Res/image/Flandre_down_1.png"
+dest_files=["res://.godot/imported/Flandre_down_1.png-6ea24dc33cef20c84449b2815c4417f7.ctex"]
 
 [params]
 

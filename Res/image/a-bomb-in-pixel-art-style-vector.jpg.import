@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq0vo6asom5e4"
-path="res://.godot/imported/cong_bach_khoa1.png-8731246445b6d2e0227d2bb384f92eb0.ctex"
+uid="uid://b32s81inftgtl"
+path="res://.godot/imported/a-bomb-in-pixel-art-style-vector.jpg-625728a06fa56b6c80f9dab9b7611f0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Res/cong_bach_khoa1.png"
-dest_files=["res://.godot/imported/cong_bach_khoa1.png-8731246445b6d2e0227d2bb384f92eb0.ctex"]
+source_file="res://Res/image/a-bomb-in-pixel-art-style-vector.jpg"
+dest_files=["res://.godot/imported/a-bomb-in-pixel-art-style-vector.jpg-625728a06fa56b6c80f9dab9b7611f0b.ctex"]
 
 [params]
 

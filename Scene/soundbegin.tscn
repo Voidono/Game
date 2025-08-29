@@ -1,13 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3vcw0tfddogu"]
+[gd_scene load_steps=4 format=3 uid="uid://b3vcw0tfddogu"]
 
-[ext_resource type="Texture2D" uid="uid://2pu5hikxgp7h" path="res://map cho chapter 1/background1.png" id="1_tpbo2"]
+[ext_resource type="Script" uid="uid://ds4oje4qgt21c" path="res://Scene/soundbegin.gd" id="1_0mdx1"]
+[ext_resource type="Texture2D" uid="uid://2pu5hikxgp7h" path="res://Res/image/background1.png" id="1_tpbo2"]
 [ext_resource type="PackedScene" uid="uid://bbjfhcjm7smbj" path="res://Scene/ban tuyen ngon doc lap.tscn" id="2_hbj3t"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_0mdx1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(399, 301)
 scale = Vector2(0.663333, 1)
 texture = ExtResource("1_tpbo2")
 
-[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("2_hbj3t")]
+[node name="bản tuyên ngôn" parent="." instance=ExtResource("2_hbj3t")]
+position = Vector2(-60, 97)
+
+[connection signal="finished" from="bản tuyên ngôn" to="." method="_on_bản_tuyên_ngôn_finished"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2pu5hikxgp7h"
-path="res://.godot/imported/background1.png-875623991cad83d8ed72a903fd8285c5.ctex"
+uid="uid://dh6ylbhv6cijg"
+path="res://.godot/imported/120383252_p0_master1200.jpg-503a48b1d694085fdfffe8a862e6d8b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map cho chapter 1/background1.png"
-dest_files=["res://.godot/imported/background1.png-875623991cad83d8ed72a903fd8285c5.ctex"]
+source_file="res://Res/image/120383252_p0_master1200.jpg"
+dest_files=["res://.godot/imported/120383252_p0_master1200.jpg-503a48b1d694085fdfffe8a862e6d8b7.ctex"]
 
 [params]
 

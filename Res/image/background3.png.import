@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2l71xbvqc7ik"
-path="res://.godot/imported/Flandre_down_1.png-02baaa2625032f1de2ea530fc8837ddd.ctex"
+uid="uid://cdjdxagsvcjm3"
+path="res://.godot/imported/background3.png-456dacd959e983d36818b29d6fab4c1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Res/Flandre_down_1.png"
-dest_files=["res://.godot/imported/Flandre_down_1.png-02baaa2625032f1de2ea530fc8837ddd.ctex"]
+source_file="res://Res/image/background3.png"
+dest_files=["res://.godot/imported/background3.png-456dacd959e983d36818b29d6fab4c1d.ctex"]
 
 [params]
 

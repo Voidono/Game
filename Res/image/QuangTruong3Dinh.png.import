@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bykxqoaao3qfo"
-path="res://.godot/imported/QuangTruong3Dinh.png-8ae6511e991c39dc96afd3b9e925dd0c.ctex"
+path="res://.godot/imported/QuangTruong3Dinh.png-db18011cfcb57a78d907487d00f34821.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map cho chapter 1/QuangTruong3Dinh.png"
-dest_files=["res://.godot/imported/QuangTruong3Dinh.png-8ae6511e991c39dc96afd3b9e925dd0c.ctex"]
+source_file="res://Res/image/QuangTruong3Dinh.png"
+dest_files=["res://.godot/imported/QuangTruong3Dinh.png-db18011cfcb57a78d907487d00f34821.ctex"]
 
 [params]
 

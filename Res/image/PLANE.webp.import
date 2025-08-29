@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b32s81inftgtl"
-path="res://.godot/imported/a-bomb-in-pixel-art-style-vector.jpg-039e18a47887905f1c3738857004ab19.ctex"
+uid="uid://cibyhcoh1vfsm"
+path="res://.godot/imported/PLANE.webp-02f9fd1ba696d9a736a34e49f6cdb588.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Res/a-bomb-in-pixel-art-style-vector.jpg"
-dest_files=["res://.godot/imported/a-bomb-in-pixel-art-style-vector.jpg-039e18a47887905f1c3738857004ab19.ctex"]
+source_file="res://Res/image/PLANE.webp"
+dest_files=["res://.godot/imported/PLANE.webp-02f9fd1ba696d9a736a34e49f6cdb588.ctex"]
 
 [params]
 

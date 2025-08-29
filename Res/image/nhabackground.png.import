@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0kwxy8r4vt6v"
-path="res://.godot/imported/cong_bach_khoa1.png-5f6cb029872c673b9b469f201f0ed33e.ctex"
+uid="uid://j76rl1lstpka"
+path="res://.godot/imported/nhabackground.png-f853d4e2864bb2d09dabf66b03f27bcd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map cho chapter 1/cong_bach_khoa1.png"
-dest_files=["res://.godot/imported/cong_bach_khoa1.png-5f6cb029872c673b9b469f201f0ed33e.ctex"]
+source_file="res://Res/image/nhabackground.png"
+dest_files=["res://.godot/imported/nhabackground.png-f853d4e2864bb2d09dabf66b03f27bcd.ctex"]
 
 [params]
 
