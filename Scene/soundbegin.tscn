@@ -7,12 +7,12 @@
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0mdx1")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(399, 301)
-scale = Vector2(0.663333, 1)
-texture = ExtResource("1_tpbo2")
-
 [node name="bản tuyên ngôn" parent="." instance=ExtResource("2_hbj3t")]
 position = Vector2(-60, 97)
+
+[node name="Background1" type="Sprite2D" parent="."]
+position = Vector2(642, 323.5)
+scale = Vector2(1.07167, 1.07167)
+texture = ExtResource("1_tpbo2")
 
 [connection signal="finished" from="bản tuyên ngôn" to="." method="_on_bản_tuyên_ngôn_finished"]
